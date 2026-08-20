@@ -7,13 +7,13 @@ from gtts import gTTS
 from PIL import Image
 import base64
 
-image = Image.open('GnocchisBanner')
-image1 = Image.open('Gnocchis1')
-image2 = Image.open('Gnocchis2')
-image3 = Image.open('Gnocchis3')
-image4 = Image.open('Gnocchis4')
-image5 = Image.open('Gnocchis5')
-image6 = Image.open('Gnocchis6')
+image = Image.open('GnocchisBanner.png')
+image1 = Image.open('Gnocchis1.png')
+image2 = Image.open('Gnocchis2.png')
+image3 = Image.open('Gnocchis3.png')
+image4 = Image.open('Gnocchis4.png')
+image5 = Image.open('Gnocchis5.png')
+image6 = Image.open('Gnocchis6.png')
 
 st.title("Receta para cocinar gnocchis gratinados con chorizo")
 st.image(image)
