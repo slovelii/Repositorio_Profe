@@ -34,44 +34,28 @@ with col1:
 with col2:
   st.subheader("Segundo paso")
   st.write("Calienta la sartén a fuego medio y cocina el chorizo 3-4 min, removiendo ocasionalmente, hasta que se dore. Luego, reserva fuera de la sartén. Mientras tanto, pela la cebolla, divídela en dos y córtala en daditos pequeños. Pela y pica finamente el ajo.")
-  resp = st.checkbox("¿Lo lograste?")
-  if resp:
-    st.write("¡Continuemos!")
+
 
 col3, col4 = st.columns(2)
 
 with col3:
   st.subheader("Tercer paso")
   st.write("En la sartén, agrega un chorrito de aceite junto con el ajo. Calienta a fuego medio y cocina 1-2 min o hasta que se dore. Luego, añade la cebolla y rehoga 4-5 min, hasta que la cebolla empiece a estar transparente. Añade el tomate concentrado y el chorizo cocinado, mezcla bien y cocina 1-2 min más.")
-  resp = st.checkbox("¿Lo lograste?")
-  if resp:
-    st.write("¡Continuemos!")
-
-col5, col6 = st.columns(2)
 
 with col4:
   st.subheader("Cuarto paso")
   st.write("En la sartén, agrega la leche y el azúcar (ver cantidad en ingredientes) y lleva a ebullición durante 2-3 min, removiendo ocasionalmente, hasta que la salsa se reduzca y espese. Agrega los gnocchis a la sartén, salpimienta al gusto y mezcla para integrar los ingredientes.")
-  resp = st.checkbox("¿Lo lograste?")
-  if resp:
-    st.write("¡Continuemos!")
+
+col5, col6 = st.columns(2)
 
 with col5:
   st.subheader("Quinto paso")
   st.write("Coloca los gnocchis con chorizo en una fuente para horno y agrega encima el queso rallado. Hornea en el estante superior 6-8 min o hasta que el queso se funda y dore.")
-  resp = st.checkbox("¿Lo lograste?")
-  if resp:
-    st.write("¡Continuemos!")
 
 with col6:
   st.subheader("Sexto paso")
   st.write("Coloca la fuente en la mesa y sirve gnocchis con chorizo y queso gratinado en platos.")
-  resp = st.checkbox("¿Lo lograste?")
-  if resp:
-    st.write("¡Continuemos!")
-
-
-           
+       
 st.markdown(f"Quieres escucharlo?, copia el texto")
 text = st.text_area("Ingrese El texto a escuchar.")
 
