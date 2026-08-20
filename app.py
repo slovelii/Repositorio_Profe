@@ -7,55 +7,62 @@ from gtts import gTTS
 from PIL import Image
 import base64
 
+image = Image.open('GnocchisBanner')
+image1 = Image.open('Gnocchis1')
+image2 = Image.open('Gnocchis2')
+image3 = Image.open('Gnocchis3')
+image4 = Image.open('Gnocchis4')
+image5 = Image.open('Gnocchis5')
+image6 = Image.open('Gnocchis6')
+
 st.title("Receta para cocinar gnocchis gratinados con chorizo")
-image = Image.open('gato_raton.png')
-st.image(image, width=350)
+st.image(image)
 with st.sidebar:
     st.header("Aquí estará la receta completa")
     st.subheader("Selecciona los pasos para escucharlos.")
-
 
 try:
     os.mkdir("temp")
 except:
     pass
 
-st.subheader("Una pequeña Fábula.")
+st.subheader("Receta.")
 
 col1, col2 = st.columns(2)
 
 with col1:
   st.subheader("Primer paso")
   st.write("Precalienta el horno a 220ºC con la opción de gratinado. En una sartén, calienta un chorrito de aceite y la mantequilla a fuego medio. Luego, agrega los gnocchis y cocina 4-5 min, removiendo frecuentemente, hasta que estén dorados. Cuando estén listos, resérvalos en un plato.")
-  resp = st.checkbox("¿Lo lograste?")
-  if resp:
-    st.write("¡Continuemos!")
+  st.image(image1, width=150)
 
 with col2:
   st.subheader("Segundo paso")
   st.write("Calienta la sartén a fuego medio y cocina el chorizo 3-4 min, removiendo ocasionalmente, hasta que se dore. Luego, reserva fuera de la sartén. Mientras tanto, pela la cebolla, divídela en dos y córtala en daditos pequeños. Pela y pica finamente el ajo.")
-
+  st.image(image2, width=150)
 
 col3, col4 = st.columns(2)
 
 with col3:
   st.subheader("Tercer paso")
   st.write("En la sartén, agrega un chorrito de aceite junto con el ajo. Calienta a fuego medio y cocina 1-2 min o hasta que se dore. Luego, añade la cebolla y rehoga 4-5 min, hasta que la cebolla empiece a estar transparente. Añade el tomate concentrado y el chorizo cocinado, mezcla bien y cocina 1-2 min más.")
-
+  st.image(image3, width=150)
+    
 with col4:
   st.subheader("Cuarto paso")
   st.write("En la sartén, agrega la leche y el azúcar (ver cantidad en ingredientes) y lleva a ebullición durante 2-3 min, removiendo ocasionalmente, hasta que la salsa se reduzca y espese. Agrega los gnocchis a la sartén, salpimienta al gusto y mezcla para integrar los ingredientes.")
-
+  st.image(image4, width=150)
+    
 col5, col6 = st.columns(2)
 
 with col5:
   st.subheader("Quinto paso")
   st.write("Coloca los gnocchis con chorizo en una fuente para horno y agrega encima el queso rallado. Hornea en el estante superior 6-8 min o hasta que el queso se funda y dore.")
-
+  st.image(image5, width=150)
 with col6:
   st.subheader("Sexto paso")
   st.write("Coloca la fuente en la mesa y sirve gnocchis con chorizo y queso gratinado en platos.")
-       
+  st.image(image6, width=150)
+    
 st.markdown(f"Quieres escucharlo?, copia el texto")
 text = st.text_area("Ingrese El texto a escuchar.")
 
